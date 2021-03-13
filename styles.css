@@ -171,6 +171,10 @@ main {
 }
 
 .cards {
+    display: none;
+}
+
+.cards.active {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -205,6 +209,10 @@ main {
 }
 
 .recent-grid {
+    display: none;
+}
+
+.recent-grid.active {
     margin-top: 3.5rem;
     display: grid;
     grid-template-columns: 62% auto;
@@ -320,6 +328,77 @@ tr td:last-child {
     color: var(--main-color);
 }
 
+/***************** Form Customers *****************/
+.customers-form {
+    background: #fff;
+    font-size: .9rem;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    width: (100vw - 345px);
+}
+
+.customers-form form {
+    padding: 1rem;
+    width: 100%;
+}
+
+.customer-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.customers-form input {
+    border: none;
+    background: #99999950;
+    color: #1d2231;
+    padding: 1rem;
+    height: 30px;
+    width: 100%;
+}
+
+.buttons {
+    width: 30%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button, button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    height: 40px;
+
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1rem;
+    width: 33%;
+}
+
+button {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.button.cancel {
+    background: var(--color-dark);
+    color: #fff;
+}
+
+.button.list {
+    background: #444;
+    color: #fff;
+}
+
+/***************** Responsive *****************/
 @media only screen and (max-width: 1200px) {
 
     .sidebar {
