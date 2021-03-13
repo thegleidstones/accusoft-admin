@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100;1,400;1,500&display=swap"
@@ -17,9 +17,10 @@
 </head>
 
 <body>
+	<input type="checkbox" name="nav-toggle" id="nav-toggle">
 	<div class="sidebar">
 		<div class="sidebar-brand">
-			<h2><span class="lab la-accusoft"></span> Accusoft</h2>
+			<h2><span class="lab la-accusoft"></span> <span>Accusoft</span> </h2>
 		</div>
 		<div class="sidebar-menu">
 			<ul>
@@ -58,7 +59,7 @@
 	<div class="main-content">
 		<header>
 			<h2>
-				<label for="">
+				<label for="nav-toggle">
 					<span class="las la-bars"></span>
 				</label>
 				Dashboard
